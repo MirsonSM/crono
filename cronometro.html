@@ -6,133 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronômetro</title>
 
-    <style>
-        body {
-            background-color: rgba(128, 128, 128, 0.212);
-          
-        }
-
-        #conteiner {
-            background-color: white;
-            width: 100%;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;            
-        }
-        
-
-        @font-face{
-            font-family:'digital-clock-font';
-            src: url('DS-DIGIB.TTF');
-        }
-
-        #display {
-            width: 200px;
-            height: 100px;
-            font-size: 50pt;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-family: 'digital-clock-font';
-            font-style: oblique;
-            
-        }
-        
-        #butons {
-            width: 170px;
-            height: 30px;
-            display: flex;
-            justify-content: space-between;
-            
-        }
-        #redefinir {
-            background-color: orange;
-            width: 80px;
-            height: 30px;
-            text-align: center;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        #iniciar {
-            background-color: green;
-            width: 80px;
-            height: 30px;
-            text-align: center;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-           
-        }
-        .buttons {
-            width: 100%;
-            height: 80px;
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            order: 4;
-        }
-
-        button {
-            width: 100%;
-            border: none;
-            background-color: gray;
-            color: white;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            
-        }
-
-        button:hover {
-            background-color: white;
-            color: gray;
-        }
-
-        #redefinir:hover {
-            background-color: #c09647;
-            color: white;
-        }
-        #iniciar:hover {
-            background-color: #47c061;
-            color: white;
-        }
-
-        @media screen and (max-height: 400px ) {
-            #conteiner {
-                height: 200px;
-            }
-        }
-
-        @media screen and (max-height: 400px ) {
-            .buttons {
-                height:30px;
-            }
-        }
-
-        .cronometro {
-            background-color: white;
-            color:black;
-            font-size: 15pt;
-            
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
   
 </head>
 <body onload="crononometro()">
     <div class="buttons">
         <button><strong>DESPERTADOR</strong></button>
         <button class="temporizador"><strong>TEMPORIZADOR</strong></button>
-        <button class="cronometro"><strong>CRONÔMETRO</strong></button>
+        <button class="cronometro"><img src="relogio.png" alt=""><strong>CRONÔMETRO</strong></button>
         <button class="relogio"><strong>RELÓGIO</strong></button>
     </div>
 
-    <div id="conteiner">
+    <div id="container">
         <div class="crono" id="display">0:0:0</div>
         <div id="butons">
             <div id="redefinir">Redefinir</div>
